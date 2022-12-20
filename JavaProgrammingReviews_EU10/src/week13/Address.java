@@ -1,8 +1,8 @@
-package kendi_çalışmalarım;
+package week13;
 
 public class Address {
     private String street, city, state, country;
-    private int zipCode;
+    public int zipCode;
 
     public Address(String street, String city, String state, String country, int zipCode) {
         setStreet(street);
@@ -11,6 +11,8 @@ public class Address {
         setCountry(country);
         setZipCode(zipCode);
     }
+
+
 
     public Address() {
 
@@ -59,11 +61,12 @@ public class Address {
     public void setZipCode(int zipCode) {
         String zip = "" + zipCode;
         if (zip.length() != 5) {
-            System.err.println();
+            System.err.println("Invalid");
         } else {
             this.zipCode = zipCode;
         }
     }
+
 
 
 }
