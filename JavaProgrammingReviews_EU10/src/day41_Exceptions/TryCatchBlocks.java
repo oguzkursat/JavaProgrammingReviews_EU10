@@ -34,9 +34,37 @@ public class TryCatchBlocks {
         }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Catch block");
             System.out.println("Exception was caught");
+            //e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         System.out.println("Test 2 completed");
+
+        System.out.println("---------------------------------------------------------");
+
+
+        System.out.println("Test 3 started");
+
+        try {
+            System.out.println("Cydeo".substring(2,0));
+        }catch (RuntimeException e){
+            System.out.println(e.getMessage());
+           // e.printStackTrace();
+        }
+
+        System.out.println("Test 3 completed");
+
+        System.out.println("---------------------------------------------------------");
+
+        System.out.println("Hello");
+
+        try {
+            Thread.sleep(3000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
+        System.out.println("Cydeo");
 
 
     }
