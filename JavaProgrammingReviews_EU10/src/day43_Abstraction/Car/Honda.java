@@ -4,7 +4,7 @@ import java.util.SortedMap;
 
 public final class Honda extends Car {
 
-    public Honda(String brand, String model, String color, int year, double price) {
+    public Honda(String model, String color, int year, double price) {
         super("Honda", model, color, year, price);
     }
 
