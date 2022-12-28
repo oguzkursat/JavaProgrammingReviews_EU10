@@ -77,6 +77,8 @@ public class TryCatchBlocks {
             e.printStackTrace();
         }
 
+        System.out.println("Hello");
+
 
     }
 }

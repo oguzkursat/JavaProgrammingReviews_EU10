@@ -1,17 +1,22 @@
 package hatalikodlar;
 
 public class Test {
+    int count;
 
-    public Test() {
-        System.out.println("Developer");
+    public void m(){
+        count++;
     }
-    public static void Java(){
-        System.out.println("SDET");
+    public void m (int n){
+        count*=n;
     }
-
     public static void main(String[] args) {
+
         Test obj = new Test();
-        obj.Java();
+        obj.m(5);
+        obj.m();
+        obj.count += 10;
+        obj.m(2);
+        System.out.println(obj.count);
 
     }
 }

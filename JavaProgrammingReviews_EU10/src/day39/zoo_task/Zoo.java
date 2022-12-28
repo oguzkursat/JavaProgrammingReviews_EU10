@@ -1,5 +1,7 @@
 package day39.zoo_task;
 
+import hatalikodlar.Ball;
+
 public class Zoo {
     public static void main(String[] args) {
 

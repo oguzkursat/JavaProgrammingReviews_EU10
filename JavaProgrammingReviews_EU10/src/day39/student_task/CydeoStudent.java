@@ -3,7 +3,7 @@ package day39.student_task;
 public class CydeoStudent extends Student{
 
     private int batchNumber, groupNumber;
-    private String programmingLanguage;
+    private static String programmingLanguage;
 
     public CydeoStudent(String name, int age, char gender, int studentId, String fieldOfStudy, char grade, String schoolName, int batchNumber, int groupNumber, String programmingLanguage) {
         super(name, age, gender, studentId, fieldOfStudy, grade, schoolName);
@@ -76,7 +76,7 @@ public class CydeoStudent extends Student{
         return super.toString().substring(0,super.toString().length()-1)+
                 ", fieldOfStudy='" + getBatchNumber() + '\'' +
                 ", grade=" + getGroupNumber() +
-                ", schoolName='" + getProgrammingLanguage() + '\''+
+                /*", schoolName='" + getProgrammingLanguage() + '\''+*/
                 '}';
     }
 }
