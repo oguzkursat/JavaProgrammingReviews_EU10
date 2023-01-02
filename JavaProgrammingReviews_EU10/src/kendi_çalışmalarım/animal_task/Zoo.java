@@ -1,6 +1,6 @@
 package kendi_çalışmalarım.animal_task;
 
-import day39.zoo_task.Eagle;
+import daily_tasks.day39.zoo_task.Eagle;
 
 public class Zoo {
     public static void main(String[] args) {
