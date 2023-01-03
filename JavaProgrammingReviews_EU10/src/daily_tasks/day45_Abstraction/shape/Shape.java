@@ -1,24 +1,25 @@
 package daily_tasks.day45_Abstraction.shape;
 
 public abstract class Shape {
-    private String name;
+    private final String name;
 
     public Shape(String name) {
-        setName(name);
+        this.name=name;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        if(name.isEmpty()){
-            throw new RuntimeException("Invalid name");
-        }
-        this.name = name;
+
+    public abstract double area();
+
+    public abstract double perimeter();
+
+    @Override
+    public String toString() {
+        return  "name = " + name +
+                ", area = " + area() +
+                ", perimeter = " + perimeter();
     }
-
-    public double area();
-
-    public double perimeter();
 }
